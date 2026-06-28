@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background:#21268A;
+            color:white;
+            height:25px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding: 2px;
+            padding-right: 10px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:30px;
+            font-size:16px;
+        }
+        nav a:hover{
+            color:#ffd700;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table border="1">
+            <tr>
+                <td>
+                    <img src="TRC1.jpg" width="400" height="170"/>
+                </td>
+                <td>
+                    <img src="TRC2.jpg" width="975" height="170"/>
+                </td>       
+            </tr>
+            <header>
+                <div>
+                    SNIST - The Robotics Club
+                </div>
+                <nav>
+                     <a href="index.html">Home</a>
+                      <a href="login.html">Login</a>
+                      <a href="register.html">Register</a>
+                      <a href="aboutus.html">About us</a>
+                      <a href="contactus.html">Contact us</a>
+                </nav>
+            </header>
+            <tr>
+                <td colspan="2" style="color: white;background-color: #21268A">
+                <marquee>
+                    Welcome to MERN Stack
+                </marquee>
+            </td>
+            </tr>
+            <tr>
+                <table border="1">
+                    <tr>
+                        <td width="400" style="background-color: rgb(193, 193, 193);">
+                                <ol type="1">
+                                    <li>Notification1</li>
+                                    <li>Notification2</li>
+                                    <li>Notification3</li>
+                                    <li>Notification4</li>
+                                </ol>
+                        </td>
+                        <td>
+                            <table border="1" width="600">
+                                <tr> 
+                                    <td colspan="2" align="center">
+                                        Login Page
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>User Name</td>
+                                    <td>
+                                        <input type="text" id="txtuser" name="txtuser">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Password</td>
+                                    <td>
+                                        <input type="password" id="txtpassword" name="txtpassword">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <a href="index.html">Forgot Password?</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="submit" id="btnsubmit" name="btnsubmit" value="Submit">
+                                    </td>
+                                    <td>
+                                        <input type="reset" id="btnclear" name="btnclear" value="Clear">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <a href="register.html">New User?Sign up</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="hidden" name="user_id" value="123">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="file" name="file" value="file" multiple>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

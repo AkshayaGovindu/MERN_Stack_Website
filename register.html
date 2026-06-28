@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        header{
+            background:#21268A;
+            color:white;
+            height:25px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding: 2px;
+            padding-right: 10px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:30px;
+            font-size:16px;
+        }
+        nav a:hover{
+            color:#ffd700;
+        }
+        [type]{
+            border-radius: 5px;
+            border-color: darkgrey;
+            border-width: 0.2px;
+        }
+        [type="text"]{
+            height: 20px;
+            width: 500px;
+        }
+        [type="password"]{
+            height: 20px;
+            width: 500px;
+        }
+        [type="email"]{
+            height: 20px;
+            width: 500px;
+        }
+        [type="number"]{
+            height: 20px;
+            width: 500px;
+        }
+        .register{
+            color:aliceblue;
+            background-color: rgb(36, 181, 29);
+            height:30px;
+            width: 80px;
+            border-radius: 20px;
+        }
+        .register:hover{
+            background-color:green;
+            cursor: pointer;
+        }
+        .clear{
+            color:#21268A;
+            background-color: white;
+            border-color: #21268A;
+            border-radius: 20px;
+            border-width: 2px;
+            height:30px;
+            width: 80px;
+            font-size: 15px;
+        }
+        .clear:hover{
+            background-color: #21268A;
+            cursor: pointer;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table border="1">
+            <tr>
+                <td>
+                    <img src="TRC1.jpg" width="400" height="170"/>
+                </td>
+                <td>
+                    <img src="TRC2.jpg" width="975" height="170"/>
+                </td>       
+            </tr>
+            <header>
+                <div>
+                    SNIST - The Robotics Club
+                </div>
+                <nav>
+                     <a href="index.html">Home</a>
+                      <a href="login.html">Login</a>
+                      <a href="register.html">Register</a>
+                      <a href="aboutus.html">About us</a>
+                      <a href="contactus.html">Contact us</a>
+                </nav>
+            </header>
+            <tr>
+                <td colspan="2" style="color: white;background-color: #21268A">
+                <marquee>
+                    Welcome to MERN Stack
+                </marquee>
+            </td>
+            </tr>
+            <tr>
+                <table border="1">
+                    <tr>
+                        <td width="400" style="background-color: rgb(193, 193, 193);">
+                                <ol type="1">
+                                    <li>Notification1</li>
+                                    <li>Notification2</li>
+                                    <li>Notification3</li>
+                                    <li>Notification4</li>
+                                </ol>
+                        </td>
+                        <td>
+                            <table border="1" width="1100">
+                                <tr>
+                                    <td colspan="2" align="center" style="color:#21268A;font-size: 20px;">
+                                        <b>Registration page</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>First Name</td>
+                                    <td>
+                                        <input type="text" id="txtFirstName" Name="txtFirstName" placeholder="Enter first name">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td >Last Name</td>
+                                    <td>
+                                        <input type="text" id="txtLastName" Name="txtLastName" placeholder="Enter last name">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>User Name</td>
+                                    <td>
+                                        <input type="text" id="txtUserName" Name="txtUserName" placeholder="Enter user name">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Password</td>
+                                    <td>
+                                        <input type="password" id="txtpassword" Name="txtpassword" placeholder="Enter password">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Confirm Password</td>
+                                    <td>
+                                        <input type="password" id="txtconfirm" Name="txtconfirm" placeholder="confirm your password">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>
+                                        <input type="email" id="Email" Name="Email"  placeholder="Enter email address">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Contact</td>
+                                    <td>
+                                        <input type="number" id="numcontact" Name="numcontact" placeholder="Enter contact number">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 
+                                        <label>Age</label>
+                                    </td>
+                                    <td>
+                                        <select name="age">
+                                            <option>18</option>
+                                            <option>19</option>
+                                            <option>20</option>
+                                            <option>21</option>
+                                            <option>22</option>
+                                            <option>23</option>
+                                            <option>24</option>
+                                            <option>25</option>
+                                            <option>26</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Branch</label>
+                                    </td>
+                                    <td>
+                                        <select name="branch">
+                                            <option>CSE</option>
+                                            <option>CSD</option>
+                                            <option>CSM</option>
+                                            <option>IT</option>
+                                            <option>ECE</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>
+                                        <input type="radio" id="radiomale" Name="gender" value="rMale">Male
+                                        <input type="radio" id="radiofemale" Name="gender" value="rFemale">Female
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Hobbies</td>
+                                    <td>
+                                        <input type="checkbox" id="cbsinging" Name="hobbies" value="cbsinging">Singing
+                                        <input type="checkbox" id="cbsleeping" Name="hobbies" value="cbsleeping">Sleeping
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td height="100">
+                                        <input type="text" style="height:100px;width:300px;" multiple  placeholder="Enter your address">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="register" type="submit" id="btnsubmit" name="btnsubmit" value="Register">
+                                    </td>
+                                    <td>
+                                        <input class="clear" type="reset" id="btnclear" name="btnclear" value="Clear">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center" style="color:#21268A;font-size: 20px;">
+                                        <a href="login.html">Already User?Sign In</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <footer>
+                                Footer Section
+                            </footer>
+                        </td>
+                    </tr>
+                </table>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
